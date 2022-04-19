@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;1,500;1,600&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@700&family=Roboto:wght@300;700&display=swap');
+
+/*Root*/
+:root{
+    --ff-primary: 'Outfit', sans-serif ;
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan-blue: hsl(178, 100%, 50%) ;
+    --clr-dark-blue-main:hsl(217, 54%, 11%);
+    --clr-darl-blue-card:hsl(216, 50%, 16%);
+    --clr-dark-blue-line:hsl(215, 32%, 27%);
+    --clr-white:hsl(0, 0%, 100%);
+}
+/*Root*/
+
+/*Estilos Gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+hr{
+    width: 80%;
+    border-color: var(--clr-dark-blue-line);
+}
+svg{
+    margin-right: 4px;
+}
+
+/*Estilos Gerais*/
+
+/*Card Principal*/
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--clr-dark-blue-main);
+}
+.container-conteudo{
+
+    width: 18%;
+    height: 68%;
+    background-color: var(--clr-darl-blue-card);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
+   
+}
+/*Card Principal*/
+
+/*Conteúdo*/
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.titulo-principal{
+    font-size: 18px;
+    color: var(--clr-white);
+    margin:10px 0;
+    margin-right: 55px;
+}
+.conteudo-principal{
+    color: var(--clr-soft-blue);
+    width: 80%;
+    font-size: 12px;
+    margin-left: 20px;
+
+}
+
+.sub-titulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+.info{
+    color: var(--clr-cyan-blue);
+    margin-right: 50px;
+    font-size: 14px;
+    display: flex;
+}
+.data{
+    color: var(--clr-soft-blue);
+    font-size: 14px;
+    display: flex;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.avatar-principal{
+    height: 30px;
+    width: 30px;
+    border: solid 1px var(--clr-white);
+    border-radius: 30px;
+}
+
+.info-avatar{
+    font-size: 14px;
+    padding-left: 15px;
+}
+.criador{
+    color: var(--clr-soft-blue);
+}
+.criador-nome{
+    color: var(--clr-white);
+}
+
+/*Conteúdo*/

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+/*Configuração*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary: 'Big Shoulders Display', sans-serif;
+    --ff-second: 'Lexend Deca', sans-serif;
+
+    --clr-bright-orange:hsl(31, 77%, 52%);
+    --clr-dark-cyan:hsl(184, 100%, 22%);
+    --clr-very-dark-cyan:hsl(179, 100%, 13%);
+    --clr-white-paragraphs:hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --clr-very-light-gray-:hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+/*Configuração*/
+
+/*Estilos Gerais*/
+body{
+background-color: var(--clr-very-light-gray-);
+}
+/*Estilos Gerais*/
+
+/*Editando os cards*/
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--clr-very-light-gray-);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-main{
+    display: flex;
+    max-width: 60vw;
+    height: 70vh;
+    
+}
+.card-primary{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-second{
+    
+    background-color: var(--clr-dark-cyan);
+}
+.card-third{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image-car{
+    padding-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+.title{
+    font-family: var(--ff-primary);
+    color: var(--clr-very-light-gray-);
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+}
+.contents{
+    font-family: var(--ff-second);
+    color: var(--clr-white-paragraphs);
+    font-size: 15px;
+    padding-left: 2.5rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    
+}
+
+.button{
+    padding-left: 2.5rem;
+    padding-top: 5rem;
+}
+
+.primary-button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 35px;
+    font-family: var(--ff-second);
+    color: var(--clr-bright-orange);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.primary-button:hover{
+    background-color: var(--clr-bright-orange);
+    color: #fff;
+    border: 2px solid #fff;
+}
+.second-button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 35px;
+    font-family: var(--ff-second);
+    color: var(--clr-dark-cyan);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.second-button:hover{
+    background-color: var(--clr-dark-cyan);
+    color: #fff;
+    border: 2px solid #fff;
+}
+.third-button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 35px;
+    font-family: var(--ff-second);
+    color: var(--clr-very-dark-cyan);
+    font-size: 1rem;
+    cursor: pointer;
+} 
+.third-button:hover{
+    background-color: var(--clr-very-dark-cyan);
+    color: #fff;
+    border: 2px solid #fff;
+}
+/*Editando os cards*/
+
+/*Responsividade*/
+@media(max-width: 800px){
+    
+    .card-main{
+        display: flex;
+        flex-wrap:wrap ;
+        max-width: 60vw;
+        max-height: 30%;
+    }
+    .card-primary{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .card-third{
+        border-top-right-radius: 0px ;
+        border-bottom-left-radius: 10px;
+        padding-bottom: 2rem;
+        
+    }
+    .button{
+        padding-bottom: 1.5rem;
+    }
+}
+/*Responsividade*/
