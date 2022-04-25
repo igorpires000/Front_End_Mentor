@@ -29,21 +29,61 @@ body{
 
 .texto-principal{
     width: 45%;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+
+.titulo{
+    width: 60%;
+    margin-right: 12rem;
+}
+.span{
+    font-size: 14px;
 }
 
 .formulario{
     width: 45%;
-    height: 70%;
-    background-color: black;
+    height: 90%;
+    background: greenyellow;
+    
+}
+
+.opcoes{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
 }
+
+.bot-principal{
+    width: 85%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid hsl(246, 25%, 77%);
+    padding-left: 20px;
+    color: hsl(249, 10%, 26%) ;
+
+}
+
+.botao-confirmar{
+    width: 85%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
 
 
