@@ -18,72 +18,55 @@ body{
 }
 
 .container{
-    max-width: 80vw;
-    height: 80vh;
-    background: blue;
+    width: 90vw;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 10%;
+    
+   
 }
 
 .texto-principal{
-    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
-    gap: 20px;
+    gap: 1.5rem;
+    width: 45%;
+    height: 30vh;
+    padding-left: 6rem;
 }
-
 .titulo{
-    width: 60%;
-    margin-right: 12rem;
+    width: 80%;
+    margin-right: 90px ;
+    color: white;
+    font-size: 2.5rem;
 }
-.span{
+.sub-texto{
     font-size: 14px;
+    color: white;
 }
 
-.formulario{
-    width: 45%;
-    height: 90%;
-    background: greenyellow;
-    
-}
-
-.opcoes{
+.conteudo{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
 }
-
-.bot-principal{
-    width: 85%;
-    height: 45px;
-    border-radius: 5px;
-    border: 2px solid hsl(246, 25%, 77%);
-    padding-left: 20px;
-    color: hsl(249, 10%, 26%) ;
+.primeiro-botao{
+    margin-bottom: 2rem;
+}
+.principal{
+    width: 35vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    gap: 1rem;
 
 }
-
-.botao-confirmar{
-    width: 85%;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: hsl(154, 59%, 51%);
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-
-
-
-
