@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:linear-gradient(rgba(265,122,122,0.6), rgba(265,122,122,0.6)) ,url(./images/bg-intro-desktop.png) ;
+    background:linear-gradient(rgba(265,122,122,0.7), rgba(265,122,122,0.7)) ,url(./images/bg-intro-desktop.png) ;
     background-repeat: no-repeat;
 }
 
@@ -96,6 +96,11 @@ body{
     font-weight: 600;
 }
 
+.bot-principal:focus, input:focus{
+    outline: 1px solid hsl(246, 25%, 77%);
+    caret-color: hsl(246, 25%, 77%);
+}
+
 .botao-confirmar{
     width: 80%;
     height: 3rem;
@@ -106,4 +111,14 @@ body{
     color: white;
     font-weight: 500;
     cursor: pointer;
+}
+
+.texto-final{
+font-size: 10px;
+color: hsl(246, 25%, 77%);
+}
+
+.texto-final span a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
 }
